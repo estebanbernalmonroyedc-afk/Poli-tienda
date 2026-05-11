@@ -38,10 +38,10 @@
                         <h5 class="card-title">Cuaderno universitario</h5>
                         <p class="card-text">Cuaderno de 21x25 con 100 hojas</p>
                         <a href="#" class="btn btn-primary">Ver descripción</a>
+                        <button class="btn btn-success">Agregar a carrito</button>
                     </div>
                 </div>
             </div>
-
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="../img/calculadora.jpg" class="card-img-top" alt="calculadora">
@@ -49,6 +49,7 @@
                         <h5 class="card-title">Calculadora cientifica</h5>
                         <p class="card-text">Dispositivo que te ayudara a resolver operaciones complejas</p>
                         <a href="#" class="btn btn-primary">Ver descripción</a>
+                        <button class="btn btn-success">Agregar a carrito</button>
                     </div>
                 </div>
             </div>
@@ -60,6 +61,7 @@
                         <h5 class="card-title">diccionario</h5>
                         <p class="card-text">Libro norma que te ayudara un tu aprencizaje en el ingles</p>
                         <a href="#" class="btn btn-primary">Ver descripción</a>
+                        <button class="btn btn-success">Agregar a carrito</button>
                     </div>
                 </div>
             </div>
@@ -79,6 +81,7 @@
                             cursar la carrera de enfermeria 
                         </p>
                         <a href="#" class="btn btn-primary">Ver descripción</a>
+                        <button class="btn btn-success">Agregar a carrito</button>
                     </div>
                 </div>
             </div>
@@ -92,6 +95,7 @@
                             de las mismas
                         </p>
                         <a href="#" class="btn btn-primary">Ver descripción</a>
+                        <button class="btn btn-success">Agregar a carrito</button>
                     </div>
                 </div>
             </div>
@@ -104,6 +108,7 @@
                         <p class="card-text">permite unir mas de dos hojas
                         </p>
                         <a href="#" class="btn btn-primary">Ver descripción</a>
+                        <button class="btn btn-success">Agregar a carrito</button>
                     </div>
                 </div>
             </div>
@@ -112,8 +117,47 @@
     </section>
 
     <div class="position-fixed bottom-0 start-50 translate-middle-x mb-4">
-        <button class="btn btn-light border rounded-circle p-3 fs-4">🛒</button>
+        <button class="btn btn-light border rounded-circle p-3 fs-4" 
+        data-bs-toggle="modal"  
+        data-bs-target="#carritoModal">🛒</button>
     </div>
+
+    <div class="modal fade" id="carritoModal" tabindex="-1">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+            
+               <div class="modal-header">
+                  <h5 class="modal-title">carrito de compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+               <div class="modal-body">
+                  <ul class="list-group">
+                     <li class="list-group-item">
+                        Cuaderno universitario
+                     </li>
+                     <li class="list-group-item">
+                        Calculadora cientifica
+                     </li>
+                     <li class="list-group-item">
+                        Diccionario
+                     </li>
+                  </ul>
+               </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

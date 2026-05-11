@@ -1,26 +1,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #eef3f8;
+    background-color: #1c2e3a;
     margin: 0;
-}
-
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
 }
 
 .navbar {
     height: 80px;
 }
 
-.titulo {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #1a2b49;
-}
-
 h2 {
-    color: #1a2b49;
+    color: #fdfdfd8c;
     font-weight: 600;
 }
 
@@ -38,7 +27,7 @@ h2 {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0px 8px 20px rgba(59, 25, 138, 0.08);
 }
 
 .card-title {
@@ -52,7 +41,7 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #2a6fdb;
+    background-color: #e65632;
     border: none;
     border-radius: 8px;
     font-size: 0.85rem;
@@ -60,18 +49,5 @@ h2 {
 }
 
 .btn-primary:hover {
-    background-color: #1f5bc1;
-}
-
-button {
-    background-color: white;
-    border: 1px solid #d0d7e2;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-    transition: 0.2s;
-}
-
-button:hover {
-    transform: scale(1.1);
-    background-color: #2a6fdb;
-    color: white;
+    background-color: #000000;
 }
